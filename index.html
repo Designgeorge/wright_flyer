@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1909 Wright Military Flyer | MSFS 2020</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Base Dark Theme & Typography */
+        body {
+            background-color: #0B0F19; /* Deep MSFS-style dark background */
+            color: #E2E8F0;
+            overflow-x: hidden;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        /* Parallax Hero Background */
+        .hero-bg {
+            /* Replace the placehold.co URL with your actual 4K MSFS screenshot */
+            background-image: linear-gradient(to bottom, rgba(11, 15, 25, 0.4), rgba(11, 15, 25, 1)), url('https://placehold.co/1920x1080/1a1a2e/ffffff?text=4K+MSFS+Screenshot+Here');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Slick Glowing Text Effects */
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        .accent-glow {
+            text-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+        }
+
+        /* Scroll Animations (Vanilla JS + CSS) */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom Card Styling */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex flex-col items-center justify-center text-center px-4 relative">
+        <div class="fade-up">
+            <h2 class="text-blue-400 font-bold tracking-[0.3em] uppercase text-sm md:text-lg mb-4 accent-glow">
+                Coming Soon to MSFS 2020
+            </h2>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 glow-text tracking-tight text-white">
+                1909 Wright Military Flyer
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Experience a foundational milestone in aviation history. The world's first military airplane, recreated with unprecedented visual similarity, custom engine logic, and authentic flight models.
+            </p>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 animate-bounce fade-up" style="transition-delay: 0.5s;">
+            <svg class="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="max-w-5xl mx-auto px-6 py-24 text-center">
+        <h3 class="text-3xl font-bold mb-8 fade-up text-white">A Pioneer of the Skies</h3>
+        <p class="text-slate-300 text-lg leading-relaxed mb-8 fade-up">
+            Designed and constructed by Wilbur and Orville Wright to satisfy the demanding requirements of the U.S. Army Signal Corps. Its delicate wood-and-muslin construction and entirely unique control system make it an extraordinary, challenging machine to master.
+        </p>
+        <!-- Replace this placehold.co link with your own MSFS GIF or Image -->
+        <img src="https://placehold.co/1000x500/1e293b/ffffff?text=Cinematic+Fly-By+GIF" alt="Wright Flyer in MSFS" class="w-full rounded-xl shadow-2xl fade-up border border-slate-700">
+    </section>
+
+    <!-- Custom Systems Grid -->
+    <section class="bg-slate-900 py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-16 text-center fade-up text-white">Authentic Systems & Management</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 fade-up">
+                    <h4 class="text-xl font-bold text-blue-400 mb-3">Custom Engine Logic</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        There is no throttle! Bypassing default MSFS parameters, this aircraft runs on custom code with only two modes: IDLE and MAX RPM. Manage the fuel petcock and magneto advance lever to build power.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 fade-up" style="transition-delay: 0.1s;">
+                    <h4 class="text-xl font-bold text-blue-400 mb-3">Valve Brake Landing</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Lacking a throttle to reduce power, the pilot must pull down the Valve Brake lever upon touchdown. This historically accurate procedure arrests the exhaust valves, instantly killing combustion and thrust.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 fade-up" style="transition-delay: 0.2s;">
+                    <h4 class="text-xl font-bold text-blue-400 mb-3">Era-Accurate Instruments</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        No glass screens here. Navigate using a wooden box compass, an aneroid barometer/altimeter, and a simple weighted cord (rope) relying entirely on gravity for visual bank angle reference.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Variants Section -->
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <h3 class="text-3xl font-bold mb-16 text-center fade-up text-white">Two Distinct Flight Models</h3>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- 1909 Variant -->
+            <div class="fade-up">
+                <!-- Image placeholder -->
+                <img src="https://placehold.co/600x400/1e293b/ffffff?text=1909+Smithsonian+Variant" class="w-full rounded-xl mb-6 shadow-lg border border-slate-700">
+                <h4 class="text-2xl font-bold mb-3 text-white">1909 Smithsonian Institution Version</h4>
+                <p class="text-slate-300 leading-relaxed mb-4">
+                    The original two-seat, twin-canard configuration. This model accurately reflects the aircraft's extreme pitch instability. The pilot must constantly anticipate and actively "fly" the nose to prevent porpoising, stalls, or dives.
+                </p>
+                <ul class="text-sm text-slate-400 space-y-2">
+                    <li>• Empty Weight: 735 lbs</li>
+                    <li>• Fuel Capacity: 6.33 Gallons</li>
+                    <li>• Inherently unstable pitch</li>
+                </ul>
+            </div>
+            
+            <!-- 1910 Variant -->
+            <div class="fade-up" style="transition-delay: 0.2s;">
+                <!-- Image placeholder -->
+                <img src="https://placehold.co/600x400/1e293b/ffffff?text=1910+Army+Modified+Variant" class="w-full rounded-xl mb-6 shadow-lg border border-slate-700">
+                <h4 class="text-2xl font-bold mb-3 text-white">1910 Army Modified Version</h4>
+                <p class="text-slate-300 leading-relaxed mb-4">
+                    Reflecting later field modifications, this single-seater features a massive 43.3-gallon fuel tank and a rear horizontal stabilizer. The pilot must actively counter a dynamic center of gravity shift as the heavy fuel load burns off.
+                </p>
+                <ul class="text-sm text-slate-400 space-y-2">
+                    <li>• Fuel Capacity: 43.3 Gallons</li>
+                    <li>• Improved pitch stability</li>
+                    <li>• Features historical tricycle landing gear</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA / Footer -->
+    <footer class="bg-black py-12 border-t border-slate-800 text-center">
+        <div class="fade-up">
+            <h2 class="text-xl md:text-3xl font-bold text-white mb-4">Prepare for Flight</h2>
+            <p class="text-blue-400 font-semibold tracking-widest uppercase mb-8">Coming Soon to MSFS 2020</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Run animation once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
